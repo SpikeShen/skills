@@ -1,0 +1,36 @@
+name: NWCD Dark PPT Generation
+version: 1.0.0
+description: |
+  专门用于生成符合 NWCD Dark 模板风格的 PowerPoint 演示文稿的技能。
+  基于 Deck_Template_NWCD_dark_202103.pptx 模板，提供完整的版式结构、颜色方案和最佳实践。
+
+capabilities:
+  - 模板版式应用 - 正确使用 16 种预定义版式
+  - 颜色方案管理 - 应用 NWCD 品牌色彩
+  - 内容结构化 - 组织演示文稿内容
+  - 占位符填充 - 正确填充文本和对象占位符
+  - 风格一致性 - 保持整体视觉统一
+
+use_cases:
+  - 技术演示文稿
+  - 产品介绍
+  - 架构说明
+  - 竞品分析
+  - 流程展示
+  - 总结报告
+
+template_info:
+  name: Deck_Template_NWCD_dark_202103.pptx
+  slides: 17
+  layouts: 16
+  style: 深色主题，专业商务风格
+  colors:
+    primary: "#FFBD50"  # NWCD Orange
+    dark: "#313A40"     # Dark Gray
+    medium: "#797979"   # Medium Gray
+
+dependencies:
+  - python-pptx >= 0.6.21
+
+author: Kiro Team
+created: 2026-02-06
