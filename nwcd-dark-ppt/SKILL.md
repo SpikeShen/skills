@@ -12,9 +12,17 @@ description: 生成符合 NWCD Dark 模板风格的 PowerPoint 演示文稿。�
 3. **PPTX 技术能力** — python-pptx / PptxGenJS / XML 编辑工作流
 4. **演示适配性** — 投影仪/投屏场景优化、高对比度、内容溢出防护
 
+## 前置环境检查（生成前必须执行）
+
+在生成 PPT 之前，agent 必须先执行以下检查：
+
+1. **检查 python-pptx 是否已安装**：运行 `python3 -c "import pptx; print(pptx.__version__)"`
+2. **如果未安装**：安装依赖 `pip3 install python-pptx`（或使用 references 目录中的 `requirements.txt`）
+3. **确认模板文件存在**：模板文件 `Deck_Template_NWCD_dark_202103.pptx` 位于 skill 的 `references/` 目录中，使用前需确认其路径
+
 ## 模板信息
 
-- **模板**: `Deck_Template_NWCD_dark_202103.pptx`
+- **模板**: `Deck_Template_NWCD_dark_202103.pptx`（存放于 `references/` 目录）
 - **版式数**: 16 种（索引 0-15）
 - **风格**: 深色主题，专业商务
 - **主色调**: 橙色 `#FFBD50`、深灰 `#313A40`、辅助灰 `#A0A8B0`
